@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profil_resmi_Gonderidetay_Ogesi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_kullaniciadi_Gonderidetay_Ogesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:text="Kullanıcı Adı"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gonderi_resmi_Gonderidetay_Ogesi"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+
+        <TextView
+            android:id="@+id/txt_gonderen_Gonderidetay_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Büşra Efe"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_yemekadi_Gonderidetay_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="yemek adi"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/txt_malzemeler_Gonderidetay_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="malzemeler"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/txt_yapilis_Gonderidetay_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="nasıl yapilir"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_begeniler_Gonderidetay_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Beğeni"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/txt_yorum_Gonderidetay_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Yorumu Gör"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

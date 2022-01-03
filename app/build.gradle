@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.pasta"
+        minSdkVersion 20
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+            multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+
+
+    implementation "androidx.legacy:legacy-support-v4:1.0.0" //
+    implementation 'com.google.android.material:material:1.3.0-beta01' //
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'//
+
+    //yuvarlak image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //resmi vt ye ekleme
+    //implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //galeriden resmi secerken kırpma
+    //implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+    //material edit text
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //edit text kütüphanesi
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
