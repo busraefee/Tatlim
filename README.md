@@ -1,4 +1,4 @@
-# Tatlim
+# Tatlım
 
 “Tatlım” kullanıcıların bir kullanıcı profili oluşturarak sisteme kaydolduğu, tarif paylaşabildiği, 
 diğer kullanıcılarla etkileşim kurabildiği bir uygulamadır. 
